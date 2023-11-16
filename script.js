@@ -98,7 +98,7 @@ fetch( 'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/c
         let percentage =  county['bachelorsOrHigher'];
       return percentage; 
     })
-    .on('mouseover', (d) => {
+    .on('mouseover', (event, d) => {
       tooltip.style('opacity', 0.9);
       tooltip
         .html(function () {
